@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --color-one: #191A24;
+  --color-two: #706659;
+  --color-three: #24201A;
+  --color-four: #707042;
+  --color-five: #242417;
+  --color-contrast1: #75E0FF;
+  --color-contrast2: #2DD3EF;
+  --color-white: #fff;
+  --color-black: #000;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,0.2) ;
+}/*# sourceMappingURL=styles.css.map */
