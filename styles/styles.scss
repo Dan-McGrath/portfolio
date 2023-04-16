@@ -97,7 +97,10 @@ section{
         }
     }
 }
-//Controls 
+
+//Controls
+
+
 
 .controls{
     position: fixed;
@@ -291,7 +294,7 @@ section{
      
 .wrapper{
     display: flex;
-    align-self: center;
+    align-self: inherit;
     .link_wrapper{
         position: relative;
         a {

@@ -269,7 +269,7 @@ section {
 
 .wrapper {
   display: flex;
-  align-self: center;
+  align-self: inherit;
 }
 .wrapper .link_wrapper {
   position: relative;
