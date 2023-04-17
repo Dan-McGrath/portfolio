@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="main-content">
     <header class="section sect1 header active" id="home">
@@ -123,19 +120,33 @@
                     <h2>Contact Me</h2>
                 </div>
                 <div class="contact-content-con">
-                    <form action="https://formsubmit.co/mcgrathd3254@yahoo.com" method="POST">
+                    <form action="https://formsubmit.co/56e242fb563a08b21eada7e949fcc7e5" method="POST">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Disable Captch -->
+                        <input type="hidden" name="_captcha" value="false">
+
                         <ul class="form-boxes">
                             <li>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="user-name">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" name="name" required>
+                            </li>
+                            <li>
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" name="Last&nbsp;name" required>
                             </li>
                             <li>
                                 <label for="Email">Email:</label>
-                                <input type="email" id="mail" name="user-email">
+                                <input type="email" id="mail" name="email" required>
+                            </li>
+                            <li>
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="text" id="phoneNumber" name="phone&nbsp;number">
                             </li>
                             <li>
                                 <label for="msg">Message:</label>
-                                <textarea id="user_message" name="user-name" spellcheck="true" rows="7" cols="30"></textarea>
+                                <textarea id="user_message" name="message" spellcheck="true" rows="7" cols="30" required></textarea>
                             </li>
                             <li class="contact-submit-button">
                                 <button type="submit">Send message!</button>
@@ -166,5 +177,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/598e1292ce.js" crossorigin="anonymous"></script>
 </body>
 </html>
