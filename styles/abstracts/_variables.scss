@@ -1,12 +1,11 @@
 
 // Color Variables
-$primary-color: #123159;
-$secondary-color: #3D9DF2;
-$third-color: #102940;
-$fourth-color: #0B1A26;
-$color-contrast-1: #5CF2F2;
-$color-contrast2: #5CF2F2;
-$color-white: #fff;
+$color-bg: hsla(208, 66, 15, 1);
+$color-text: hsla(191, 86, 63, 1);
+$color-light-accent: hsla(258, 62, 33, 1);
+$color-dark-accent: hsla(208, 66, 15, 1);
+$color-darker-accent: hsla(236, 47, 23, 1);
+$color-white: hsl(0, 13%, 91%);
 $color-black: #000;
 
 // Font Stacks
@@ -20,3 +19,5 @@ $semibold: 500;
 $bold: 700;
 
 $box-shadow-1: 0 3px 15px rgba(0,0,0,0.2);
+
+
