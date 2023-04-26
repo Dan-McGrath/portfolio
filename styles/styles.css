@@ -52,10 +52,10 @@ input {
 }
 
 body {
-  background-color: #123159;
+  background-color: hsl(208, 66%, 15%);
   font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-size: 1.1rem;
-  color: #fff;
+  color: hsl(191, 86%, 63%);
   transition: all 0.4s ease-in-out;
 }
 
@@ -68,7 +68,7 @@ a {
 
 header {
   height: 100vh;
-  color: #fff;
+  color: hsl(191, 86%, 63%);
   overflow: hidden;
 }
 
@@ -84,7 +84,7 @@ section {
 .section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
-  background-color: #123159;
+  background-color: hsl(208, 66%, 15%);
 }
 
 .sect1 {
@@ -137,16 +137,16 @@ section {
   transform: translateY(-50%);
 }
 .controls .active-btn {
-  background-color: #3D9DF2 !important;
+  background-color: hsl(236, 47%, 23%) !important;
   transition: all 0.4s ease-in-out;
 }
 .controls .active-btn i {
-  color: #fff !important;
+  color: hsl(0, 13%, 91%) !important;
 }
 .controls .control {
   padding: 1rem;
   cursor: pointer;
-  background-color: #5CF2F2;
+  background-color: hsl(0, 13%, 91%);
   width: 55px;
   height: 55px;
   display: flex;
@@ -158,7 +158,7 @@ section {
 }
 .controls .control i {
   font-size: 1.2rem;
-  color: #000;
+  color: hsl(236, 47%, 23%);
   pointer-events: none;
 }
 
@@ -176,12 +176,12 @@ section {
   line-height: 50px;
   font-weight: bold;
   text-decoration: none;
-  background: #3D9DF2;
+  background: hsl(258, 62%, 33%);
   text-align: center;
-  color: #fff;
+  color: hsl(0, 13%, 91%);
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 3px solid #0B1A26;
+  border: 3px solid hsl(258, 62%, 33%);
   transition: all 0.35s;
 }
 .wrapper .link_wrapper .icon {
@@ -201,17 +201,17 @@ section {
   top: calc(50% - 15px);
   left: calc(50% - 15px);
   transform: rotate(-45deg);
-  fill: #5CF2F2;
+  fill: hsl(258, 62%, 33%);
   transition: all 0.35s;
 }
 .wrapper .link_wrapper a:hover {
   width: 200px;
-  border: 3px solid #5CF2F2;
+  border: 3px solid hsl(0, 13%, 91%);
   background: transparent;
-  color: #5CF2F2;
+  color: hsl(258, 62%, 33%);
 }
 .wrapper .link_wrapper a:hover + .icon {
-  border: 3px solid #5CF2F2;
+  border: 3px solid hsl(258, 62%, 33%);
   right: -25%;
 }
 
@@ -229,7 +229,7 @@ section {
   transition: all 0.4s ease-in-out;
   width: 65%;
   height: 100%;
-  background-color: #3D9DF2;
+  background-color: hsl(258, 62%, 33%);
   position: absolute;
   left: 0;
   top: 0;
@@ -242,7 +242,7 @@ section {
   height: 90%;
   width: 68%;
   margin-left: 2rem;
-  background-color: #000;
+  background-color: hsl(208, 66%, 15%);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -266,7 +266,7 @@ section {
   font-size: 3rem;
 }
 .header-content .right-header .name span {
-  color: #3D9DF2;
+  color: hsl(258, 62%, 33%);
 }
 .header-content .right-header p {
   margin: 1.5rem 0;
@@ -297,7 +297,7 @@ section {
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
-  background-color: #3D9DF2;
+  background-color: hsl(191, 86%, 63%);
   position: absolute;
   left: 0;
   top: 0;
@@ -312,7 +312,7 @@ section {
 }
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
-  color: #fff;
+  color: hsl(0, 13%, 91%);
   margin-bottom: 1.5rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
@@ -321,7 +321,7 @@ section {
   align-items: center;
 }
 .portfolios .portfolio-item .hover-items .icons .icon {
-  background-color: #123159;
+  background-color: hsl(208, 66%, 15%);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -334,14 +334,14 @@ section {
 }
 .portfolios .portfolio-item .hover-items .icons .icon i {
   font-size: 1.5rem;
-  color: #fff;
+  color: hsl(0, 13%, 91%);
   margin: 0 1rem;
 }
 .portfolios .portfolio-item .hover-items .icons .icon:hover {
-  background-color: #fff;
+  background-color: hsl(0, 13%, 91%);
 }
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
-  color: #123159;
+  color: hsl(208, 66%, 15%);
 }
 
 .portfolio-item:hover .hover-items {

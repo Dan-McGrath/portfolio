@@ -10,7 +10,7 @@
             transition: all .4s ease-in-out;
             width: 65%;
             height: 100%;
-            background-color: $secondary-color;
+            background-color: $color-light-accent;
             position: absolute;
             left: 0;
             top: 0;
@@ -23,7 +23,7 @@
             height: 90%;
             width: 68%;
             margin-left: 2rem;
-            background-color: $color-black;
+            background-color: $color-dark-accent;
             transition: all .4s ease-in-out;
             img{
                 width: 100%;
@@ -46,7 +46,7 @@
         .name{
             font-size: 3rem;
             span{
-                color: $secondary-color;
+                color: $color-light-accent;
             }
         }
         p{

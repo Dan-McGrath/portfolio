@@ -1,7 +1,7 @@
 .section{
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
-    background-color: $primary-color;
+    background-color: $color-bg;
 }
 
 .sect1{
@@ -60,7 +60,7 @@
     
 
     .active-btn{
-        background-color: $secondary-color !important;
+        background-color: $color-darker-accent !important;
         transition: all .4s ease-in-out;
         
         i{
@@ -71,7 +71,7 @@
     .control{
         padding: 1rem;
         cursor: pointer;
-        background-color: $color-contrast-1;
+        background-color: $color-white;
         width: 55px;
         height: 55px;
         display: flex;
@@ -83,7 +83,7 @@
         
         i{
             font-size: 1.2rem;
-            color: $color-black;
+            color: $color-darker-accent;
             pointer-events: none;
         
         }
