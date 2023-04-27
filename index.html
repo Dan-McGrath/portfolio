@@ -10,173 +10,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="main-content">
-    <header class="section sect1 header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">    
-                    <img src="images/tempHeadshot.jpg" alt="Dan McGrath">
-                </div>                    
-            </div>
-            <div class="right-header">
-                 <h1 class="name">
-                    Hello, I am <span>Dan McGrath.</span><br>
-                    A Software Engineer.
-                </h1>
-                <p>
-                    I love creating programs that offer both good functionality and effiency.                
-                </p>
-                <div class="wrapper">
-                    <div class="link_wrapper">
-                      <a href="images/Dan's Resume.pdf" target="_blank">CSV</a>
-                      <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
-                        </svg>
-                      </div>
-                    </div>
-                </div>    
-            </div>
-        </div>
+<body>
+    <header>
+      <nav>
+        <!--   Main Navigation   -->
+         <div class='logo-container'>
+           Logo
+         </div>
+          <ul class='nav-items'>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class='mobile-btn-toggle'>Mobile Toggle</i>
+         </div>
+       </nav>
+        <!--    End Main Navigation    -->
+        
+        <!--   Mobile Nav     -->
+       <div class='mobile-nav'>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>  
+        <!--   End Mobile Nav     -->
     </header>
     <main>
-        <section class="section sect2 about" id="about">
-            <div class="main-title">
-                <h2>About me</h2>
-            </div>
-        </section>
-        <section class="section sect3 portfolio" id="portfolio">
-            <div class="main-title">
-                <h2>My Portfolio</h2>
-            </div>
-            <p class="port-text">
-                Here is some of the work I have done!
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="img">
-                        <img src="images/projectTemplate.jpg" alt="Project One">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/Dan-McGrath" target="_blank" class="icon">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="portfolio-item">
-                    <div class="img">
-                        <img src="images/projectTemplate.jpg" alt="Project One">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/Dan-McGrath" target="_blank" class="icon">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="portfolio-item">
-                    <div class="img">
-                        <img src="images/projectTemplate.jpg" alt="Project One">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/Dan-McGrath" target="_blank" class="icon">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="portfolio-item">
-                    <div class="img">
-                        <img src="images/projectTemplate.jpg" alt="Project One">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/Dan-McGrath" target="_blank" class="icon">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </section>
-        <section class="section sect4 blogs" id="blogs"></section>
-        <section class="section sect5 contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact Me</h2>
-                </div>
-                <div class="contact-content-con">
-                    <form action="https://formsubmit.co/56e242fb563a08b21eada7e949fcc7e5" method="POST">
-                        <!-- Honeypot -->
-                        <input type="text" name="_honey" style="display: none;">
-
-                        <!-- Disable Captch -->
-                        <input type="hidden" name="_captcha" value="false">
-
-                        <ul class="form-boxes">
-                            <li>
-                                <label for="firstName">First Name:</label>
-                                <input type="text" id="firstName" name="name" required>
-                            </li>
-                            <li>
-                                <label for="lastName">Last Name:</label>
-                                <input type="text" id="lastName" name="Last&nbsp;name" required>
-                            </li>
-                            <li>
-                                <label for="Email">Email:</label>
-                                <input type="email" id="mail" name="email" required>
-                            </li>
-                            <li>
-                                <label for="phoneNumber">Phone Number:</label>
-                                <input type="text" id="phoneNumber" name="phone&nbsp;number">
-                            </li>
-                            <li>
-                                <label for="msg">Message:</label>
-                                <textarea id="user_message" name="message" spellcheck="true" rows="7" cols="30" required></textarea>
-                            </li>
-                            <li class="contact-submit-button">
-                                <button type="submit">Send message!</button>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-        </section>
+      <!--   Hero Section   -->
+      <section class='section hero' id='hero'>
+        <h1 class='title name'>Dan McGrath</h1>
+        <p>Full Stack Developer</p>
+      </section>
+      <section class='section about' id='about'>
+        <h1 class='title'>About Me</h1>
+        <p>Hello, I'm <span>Dan McGrath!</span> I'm a self-taught, Full-Stack Devoloper. My focus is on creating responsive web designs, using the MERN tech stack!</p>
+       
+        <!--    Tech Stack    -->
+        <div class='techstack-container'>
+          <div class='knowledge-level'>
+            <h2>Proficient</h2>
+          </div>
+          <div class='knowledge-level'>
+            <h2>Competent</h2>
+          </div>
+          <div class='knowledge-level'>
+            <h2>Learning Now</h2>
+          </div>
+        </div>
+        <!--    End Tech Stack    -->
+      </section>
+      <!--   End Hero Section   -->
+      
+      <!--   Project Section   -->
+      <section class='section projects' id='projects'>
+        <h1 class='title'>Projects</h1>
+        <!--   Projects Card Container    -->
+        <div class='cards'> 
+          <div class='card'>
+            <img />
+            <h2>Project 1</h2>
+            <p></p>
+            <a title='Source Code' href="https://github.com/Dan-McGrath" target="_blank" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a title='Live Demo' href='' target='_blank' class='icon'>
+              <i class="fa-solid fa-desktop"></i>
+            </a>
+          </div>
+          <div class='card'>
+            <img />
+            <h2>Project 2</h2>
+            <p></p>
+            <a title='Source Code' href="https://github.com/Dan-McGrath" target="_blank" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a title='Live Demo' href='' target='_blank' class='icon'>
+              <i class="fa-solid fa-desktop"></i>
+            </a>
+          </div>
+          <div class='card'>
+            <img />
+            <h2>Project 3</h2>
+            <p></p>
+            <a title='Source Code' href="https://github.com/Dan-McGrath" target="_blank" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a title='Live Demo' href='' target='_blank' class='icon'>
+              <i class="fa-solid fa-desktop"></i>
+            </a>
+          </div>
+          <div class='card'>
+            <img />
+            <h2>Project 4</h2>
+            <p></p>
+            <a title='Source Code' href="https://github.com/Dan-McGrath" target="_blank" class="icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a title='Live Demo' href='' target='_blank' class='icon'>
+              <i class="fa-solid fa-desktop"></i>
+            </a>
+          </div>
+        </div>
+        <!--    End Projects Card Container    -->
+      </section>
+      <!--   End Project Section   -->
+      
+      <!--   Contact Section   -->
+      <section class='section contact' id='contact'>
+        <h1 class='title'>Contact Me</h1>
+        <form action='' method='post' netlify>
+          <label for='name'>Name: 
+            <input type='text' id='name' name='name' required/>
+          </label>
+          <label for='email'>Email: 
+            <input type='email' id='email' name='Email' required/>
+          </label>
+          <label for='message'>Message: 
+            <textarea name='Message'></textarea>
+          </label>
+          <input type='submit' value='Message me!' required/>
+        </form>
+      </section>
+      <!--   End Contact Section   -->
+     
+     <!--   Footer   -->
+    <footer>
+    </footer>
+    <!--  End Footer    -->
     </main>
-
-    <div class="controls">
-        <div class="control control-1 active-btn" data-id="home">
-            <i class="fa-solid fa-house-user"></i>
-        </div>
-        <div class="control control-2" data-id="about">
-            <i class="fa-solid fa-user-tie"></i>
-        </div>
-        <div class="control control-3" data-id="portfolio">
-            <i class="fa-regular fa-folder-open"></i>
-        </div>
-        <div class="control control-4" data-id="blogs">
-            <i class="fa-solid fa-newspaper"></i>
-        </div>
-        <div class="control control-5" data-id="contact">
-            <i class="fa-solid fa-message"></i>
-        </div>
-    </div>
-
-    <script src="app.js"></script>
-    <script src="https://kit.fontawesome.com/598e1292ce.js" crossorigin="anonymous"></script>
-</body>
-</html>
+    
+      
+    
+  <body>
