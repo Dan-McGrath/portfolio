@@ -54,13 +54,12 @@ input{
 // VARIABLES
 
 // Color Variables
-$color-bg: hsla(208, 66, 15, 1);
-$color-text: hsla(191, 86, 63, 1);
-$color-light-accent: hsla(258, 62, 33, 1);
-$color-dark-accent: hsla(208, 66, 15, 1);
-$color-darker-accent: hsla(236, 47, 23, 1);
-$color-white: hsl(0, 13%, 91%);
-$color-black: #000;
+$color-bg: hsl(0, 0%, 25%);
+$color-text: hsl(0, 0%, 85%);
+$color-light-accent: hsl(120, 90%, 80%);
+$color-border: hsl(0, 0%, 5%);
+$color-grey: hsl(0, 0%, 45%);
+$color-dark-grey: hsl(0 0% 15%);
 
 // Font Stacks
 $sans-serif: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'segoe ui', 'helvetica neue', helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
@@ -99,6 +98,11 @@ a {
     text-decoration: none;
     color: inherit;
     font-family: inherit;
+}
+
+.title,
+span {
+    color: $color-light-accent
 }
 
 // END BASE

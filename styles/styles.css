@@ -48,10 +48,10 @@ input {
 }
 
 body {
-  background-color: hsl(208, 66%, 15%);
+  background-color: hsl(0, 0%, 25%);
   font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-size: 18px;
-  color: hsl(191, 86%, 63%);
+  color: hsl(0, 0%, 85%);
 }
 
 a {
@@ -59,4 +59,9 @@ a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
+}
+
+.title,
+span {
+  color: hsl(120, 90%, 80%);
 }/*# sourceMappingURL=styles.css.map */
