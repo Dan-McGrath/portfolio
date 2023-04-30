@@ -220,6 +220,11 @@ nav {
     p {
         display: none;
     }
+
+    i {
+        color: $color-text;
+        font-size: $fs-500;
+    }
 }
 
 // END HEADER

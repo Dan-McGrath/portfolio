@@ -155,6 +155,10 @@ nav {
 .hamburger p {
   display: none;
 }
+.hamburger i {
+  color: hsl(0, 0%, 85%);
+  font-size: 2rem;
+}
 
 .hero {
   display: flex;
