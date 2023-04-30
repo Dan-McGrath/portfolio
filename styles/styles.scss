@@ -367,7 +367,39 @@ nav {
 
 // PROJECTS
 
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
 // Cards
+
+.cards{
+    margin-top: 3rem;
+    display: grid;
+    width: 100%;
+}
+
+.card {
+        border-radius: 10px;
+        box-shadow: 0 0 20px 5px $color-dark-grey;
+        margin: 1rem 0;
+    h2 {
+        margin: 1rem;
+        font-size: $fs-500;
+    }
+
+
+    img {
+        width: 100%;
+        border-radius: 15%;
+    }
+    
+    p{
+        font-size: $fs-300;
+        padding: 1rem;
+    }   
+}
 
 // END PROJECTS
 

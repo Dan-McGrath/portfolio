@@ -250,4 +250,33 @@ nav {
   font-size: 0.43rem;
   font-weight: 500;
   padding-top: 0.5rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  margin-top: 3rem;
+  display: grid;
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px hsl(0, 0%, 15%);
+  margin: 1rem 0;
+}
+.card h2 {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.card img {
+  width: 100%;
+  border-radius: 15%;
+}
+.card p {
+  font-size: 1.3rem;
+  padding: 1rem;
 }/*# sourceMappingURL=styles.css.map */
