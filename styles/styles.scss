@@ -72,10 +72,11 @@ $fw-semibold: 500;
 $fw-bold: 700;
 
 // Font Size
-$fs-400: 18px;
-$fs-500: 22px;
-$fs-600: 26px;
-$fs-700: 36px;
+$fs-400: 1rem;
+$fs-500: 1.5rem;
+$fs-600: 2rem;
+$fs-700: 2.5rem;
+$fs-900: 4rem;
 
 $box-shadow-1: 0 3px 15px rgba(0,0,0,0.2);
 
@@ -91,7 +92,7 @@ body{
     font-family: $sans-serif;
     font-size: $fs-400;
     color: $color-text;
-
+    text-align: center
     
 }
 
@@ -105,6 +106,14 @@ a {
 .title,
 span {
     color: $color-light-accent
+}
+
+.title {
+    font-size: $fs-900;
+}
+
+section {
+    margin: 1rem;
 }
 
 // END BASE
@@ -123,6 +132,14 @@ header {
     
     .logo {
       cursor: pointer;
+      width: 20%;
+        
+      img {
+        max-width: 100px;
+        
+        border-radius: 20%;
+        display: block;
+      }
     }
   }
 // Main Navigation

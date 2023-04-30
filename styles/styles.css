@@ -50,8 +50,9 @@ input {
 body {
   background-color: hsl(0, 0%, 25%);
   font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: hsl(0, 0%, 85%);
+  text-align: center;
 }
 
 a {
@@ -66,6 +67,14 @@ span {
   color: hsl(120, 90%, 80%);
 }
 
+.title {
+  font-size: 4rem;
+}
+
+section {
+  margin: 1rem;
+}
+
 header {
   background-color: hsl(0, 0%, 15%);
   display: flex;
@@ -75,12 +84,18 @@ header {
 }
 header .logo {
   cursor: pointer;
+  width: 20%;
+}
+header .logo img {
+  max-width: 100px;
+  border-radius: 20%;
+  display: block;
 }
 
 .nav__links li {
   display: inline-block;
   padding: 1rem 1rem;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .nav__links a {
@@ -116,13 +131,13 @@ header .logo {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size: 22px;
+  font-size: 1.5rem;
   background-color: #4b536c;
   height: 50vh;
 }
 .hero h1,
 .hero p {
-  font-size: 36px;
+  font-size: 2.5rem;
 }
 .hero h1 {
   padding: 1rem;
