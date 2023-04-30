@@ -117,6 +117,24 @@ section {
     margin: 1rem;
 }
 
+.icon {
+    width: 30px;
+    height: 55px;
+    margin: 0 1rem;
+        
+    
+    
+    i {
+        width: 100%;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $color-light-accent;
+        
+        }
+    }
+}
+
 // END BASE
 
 
@@ -200,27 +218,27 @@ header {
     justify-content: center;
     font-size: $fs-500;
     background-color: #4b536c;
-    height: 50vh;
+    height: 75vh;
 
-    h1,
-    p {
-      font-size: $fs-700;
-    }
+    .hero__text {
+        font-size: $fs-700;
+        h1 {
+        font-weight: $fw-bold;
+        }
     
-    h1 {
-      font-weight: $fw-bold;
+        p {
+            font-weight: $fw-light;
 
-    }
+            span {
+                color: $color-light-accent;
+                font-weight: $fw-light;
+                font-size: $fs-800;
+            }
+        }
+    }   
+
     
-    p {
-      font-weight: $fw-light;
 
-      span {
-        color: $color-light-accent;
-        font-weight: $fw-light;
-        font-size: $fs-800;
-      }
-    }
     
   }
   
@@ -230,22 +248,23 @@ header {
     margin: 1rem;
     padding: 1rem;
 
-    button {
+    a {
         background-color: $color-light-accent;
         color: $color-dark-grey;
-        font-weight: $fw-semibold;
+        font-weight: $fw-light;
         border: none;
         border-radius: 900px;
-        font-size: $fs-300;
+        font-size: $fs-400;
         padding: 0.5rem 2rem;
         box-shadow: 0 0 20px 5px $color-dark-grey;
         cursor: pointer;
-        transition: all 0.4s ease;
+        transition: background-color 0.5s ease-in 70ms;
 
         &:hover {
             background-color: $color-bg;
             color: $color-text;
             box-shadow: 0 0 20px 5px $color-grey;
+            font-weight: $fw-normal;
         }
     }
 }
@@ -258,11 +277,7 @@ header {
     justify-content: center;
     margin-top: 1rem;
     font-size: $fs-500;
-
-    a {
-        margin: 0 1rem;
-        
-    }
+    border-radius: 50%;
 }
 
 // END HERO

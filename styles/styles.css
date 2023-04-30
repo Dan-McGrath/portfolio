@@ -75,6 +75,19 @@ section {
   margin: 1rem;
 }
 
+.icon {
+  width: 30px;
+  height: 55px;
+  margin: 0 1rem;
+}
+.icon i {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.icon i:hover {
+  color: hsl(120, 90%, 80%);
+}
+
 header {
   background-color: hsl(0, 0%, 15%);
   display: flex;
@@ -132,19 +145,18 @@ header .logo img {
   justify-content: center;
   font-size: 2rem;
   background-color: #4b536c;
-  height: 50vh;
+  height: 75vh;
 }
-.hero h1,
-.hero p {
+.hero .hero__text {
   font-size: 3rem;
 }
-.hero h1 {
+.hero .hero__text h1 {
   font-weight: 700;
 }
-.hero p {
+.hero .hero__text p {
   font-weight: 300;
 }
-.hero p span {
+.hero .hero__text p span {
   color: hsl(120, 90%, 80%);
   font-weight: 300;
   font-size: 4rem;
@@ -154,22 +166,23 @@ header .logo img {
   margin: 1rem;
   padding: 1rem;
 }
-.cta button {
+.cta a {
   background-color: hsl(120, 90%, 80%);
   color: hsl(0, 0%, 15%);
-  font-weight: 500;
+  font-weight: 300;
   border: none;
   border-radius: 900px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0.5rem 2rem;
   box-shadow: 0 0 20px 5px hsl(0, 0%, 15%);
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: background-color 0.5s ease-in 70ms;
 }
-.cta button:hover {
+.cta a:hover {
   background-color: hsl(0, 0%, 25%);
   color: hsl(0, 0%, 85%);
   box-shadow: 0 0 20px 5px hsl(0, 0%, 45%);
+  font-weight: 400;
 }
 
 .social {
@@ -177,7 +190,5 @@ header .logo img {
   justify-content: center;
   margin-top: 1rem;
   font-size: 2rem;
-}
-.social a {
-  margin: 0 1rem;
+  border-radius: 50%;
 }/*# sourceMappingURL=styles.css.map */
