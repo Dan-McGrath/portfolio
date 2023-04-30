@@ -73,6 +73,7 @@ span {
 
 section {
   margin: 1rem 0;
+  height: 100vh;
 }
 
 .icon {
@@ -93,7 +94,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5%;
+  padding: 1rem 5%;
+  position: fixed;
 }
 header .logo {
   cursor: pointer;
@@ -106,7 +108,7 @@ header .logo img {
 }
 
 nav {
-  height: 10vh;
+  height: 5vh;
 }
 
 .nav__links li {
@@ -149,7 +151,8 @@ nav {
   justify-content: center;
   font-size: 2rem;
   background-color: #4b536c;
-  height: 80vh;
+  height: 100vh;
+  margin: 0;
 }
 .hero .hero__text {
   font-size: 3rem;
