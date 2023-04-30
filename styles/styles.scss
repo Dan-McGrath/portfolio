@@ -162,8 +162,12 @@ header {
   }
 // Main Navigation
 
+nav {
+    height: 10vh;
+}
+
 .nav__links {
-  
+    
     li {
       display: inline-block;
       padding: 1rem 1rem;
@@ -218,7 +222,7 @@ header {
     justify-content: center;
     font-size: $fs-500;
     background-color: #4b536c;
-    height: 75vh;
+    height: 80vh;
 
     .hero__text {
         font-size: $fs-700;

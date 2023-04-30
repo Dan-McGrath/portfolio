@@ -105,6 +105,10 @@ header .logo img {
   display: block;
 }
 
+nav {
+  height: 10vh;
+}
+
 .nav__links li {
   display: inline-block;
   padding: 1rem 1rem;
@@ -145,7 +149,7 @@ header .logo img {
   justify-content: center;
   font-size: 2rem;
   background-color: #4b536c;
-  height: 75vh;
+  height: 80vh;
 }
 .hero .hero__text {
   font-size: 3rem;
