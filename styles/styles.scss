@@ -72,11 +72,12 @@ $fw-semibold: 500;
 $fw-bold: 700;
 
 // Font Size
-$fs-400: 1rem;
-$fs-500: 1.5rem;
-$fs-600: 2rem;
-$fs-700: 2.5rem;
-$fs-900: 4rem;
+$fs-300: 1rem;
+$fs-400: 1.5rem;
+$fs-500: 2rem;
+$fs-600: 2.5rem;
+$fs-700: 3rem;
+$fs-800: 4rem;
 
 $box-shadow-1: 0 3px 15px rgba(0,0,0,0.2);
 
@@ -109,7 +110,7 @@ span {
 }
 
 .title {
-    font-size: $fs-900;
+    font-size: $fs-800;
 }
 
 section {
@@ -136,7 +137,6 @@ header {
         
       img {
         max-width: 100px;
-        
         border-radius: 20%;
         display: block;
       }
@@ -196,37 +196,85 @@ header {
 
 .hero {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     font-size: $fs-500;
     background-color: #4b536c;
     height: 50vh;
-    
+
     h1,
     p {
       font-size: $fs-700;
     }
     
     h1 {
-      padding: 1rem;
       font-weight: $fw-bold;
+
     }
     
     p {
       font-weight: $fw-light;
+
+      span {
+        color: $color-light-accent;
+        font-weight: $fw-light;
+        font-size: $fs-800;
+      }
     }
     
   }
   
 
 // Resume CTA
+.cta {
+    margin: 1rem;
+    padding: 1rem;
 
-// Contact CTA
+    button {
+        background-color: $color-light-accent;
+        color: $color-dark-grey;
+        font-weight: $fw-semibold;
+        border: none;
+        border-radius: 900px;
+        font-size: $fs-300;
+        padding: 0.5rem 2rem;
+        box-shadow: 0 0 20px 5px $color-dark-grey;
+        cursor: pointer;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: $color-bg;
+            color: $color-text;
+            box-shadow: 0 0 20px 5px $color-grey;
+        }
+    }
+}
+
+
+// Socials
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: $fs-500;
+
+    a {
+        margin: 0 1rem;
+        
+    }
+}
+
+// END HERO
+
+
+
+
+// ABOUT ME
 
 // Tech Stack
 
-// END HERO
+// END ABOUT ME
 
 
 

@@ -50,7 +50,7 @@ input {
 body {
   background-color: hsl(0, 0%, 25%);
   font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: hsl(0, 0%, 85%);
   text-align: center;
 }
@@ -95,7 +95,7 @@ header .logo img {
 .nav__links li {
   display: inline-block;
   padding: 1rem 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 .nav__links a {
@@ -128,21 +128,56 @@ header .logo img {
 
 .hero {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
+  justify-content: center;
+  font-size: 2rem;
   background-color: #4b536c;
   height: 50vh;
 }
 .hero h1,
 .hero p {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .hero h1 {
-  padding: 1rem;
   font-weight: 700;
 }
 .hero p {
   font-weight: 300;
+}
+.hero p span {
+  color: hsl(120, 90%, 80%);
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.cta {
+  margin: 1rem;
+  padding: 1rem;
+}
+.cta button {
+  background-color: hsl(120, 90%, 80%);
+  color: hsl(0, 0%, 15%);
+  font-weight: 500;
+  border: none;
+  border-radius: 900px;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 20px 5px hsl(0, 0%, 15%);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.cta button:hover {
+  background-color: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 85%);
+  box-shadow: 0 0 20px 5px hsl(0, 0%, 45%);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.social a {
+  margin: 0 1rem;
 }/*# sourceMappingURL=styles.css.map */
