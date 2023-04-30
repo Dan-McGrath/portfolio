@@ -151,7 +151,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    //position: fixed;
+    position: fixed;
+    width: 100%;
     
     .logo {
       cursor: pointer;
@@ -168,10 +169,11 @@ header {
 
 nav {
     height: 5vh;
+    display: flex;
 }
 
 .nav__links {
-    
+    display: none;
     li {
       display: inline-block;
       padding: 1rem 1rem;
@@ -208,9 +210,16 @@ nav {
 
 // Mobile Nav
 
-.mobile-nav,
-.mobile-btn-toggle{
-  display: none;
+.mobile-nav {
+    display: none;
+}
+
+.hamburger {
+    list-style: none;
+    
+    p {
+        display: none;
+    }
 }
 
 // END HEADER
