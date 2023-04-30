@@ -64,4 +64,70 @@ a {
 .title,
 span {
   color: hsl(120, 90%, 80%);
+}
+
+header {
+  background-color: hsl(0, 0%, 15%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+}
+header .logo {
+  cursor: pointer;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 22px;
+  font-weight: 400;
+}
+.nav__links a {
+  transition: all 1s ease 0s;
+  padding: 0.5rem;
+  position: relative;
+}
+.nav__links a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: white;
+  left: 0;
+  height: 3px;
+  bottom: -10px;
+  transition: 1s;
+}
+.nav__links a:hover {
+  width: 100%;
+  color: white;
+}
+.nav__links a:hover:after {
+  width: 100%;
+}
+
+.mobile-nav,
+.mobile-btn-toggle {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  background-color: #4b536c;
+  height: 50vh;
+}
+.hero h1,
+.hero p {
+  font-size: 36px;
+}
+.hero h1 {
+  padding: 1rem;
+  font-weight: 700;
+}
+.hero p {
+  font-weight: 300;
 }/*# sourceMappingURL=styles.css.map */

@@ -72,8 +72,10 @@ $fw-semibold: 500;
 $fw-bold: 700;
 
 // Font Size
-$fs-normal: 18px;
-
+$fs-400: 18px;
+$fs-500: 22px;
+$fs-600: 26px;
+$fs-700: 36px;
 
 $box-shadow-1: 0 3px 15px rgba(0,0,0,0.2);
 
@@ -87,7 +89,7 @@ $box-shadow-1: 0 3px 15px rgba(0,0,0,0.2);
 body{
     background-color: $color-bg;
     font-family: $sans-serif;
-    font-size: $fs-normal;
+    font-size: $fs-400;
     color: $color-text;
 
     
@@ -112,9 +114,61 @@ span {
 
 // HEADER
 
+header {
+    background-color: $color-dark-grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 05%;
+    
+    .logo {
+      cursor: pointer;
+    }
+  }
 // Main Navigation
 
+.nav__links {
+  
+    li {
+      display: inline-block;
+      padding: 1rem 1rem;
+      font-size: $fs-500;
+      font-weight: $fw-normal;
+      
+    }
+    
+    a {
+      transition: all 1s ease 0s;
+      padding: 0.5rem;
+      position: relative; 
+      
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        background-color: white;
+        left: 0;
+        height: 3px;
+        bottom: -10px;
+        transition: 1s;
+      }
+      &:hover {
+          width: 100%;
+          color: white;
+        
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
 // Mobile Nav
+
+.mobile-nav,
+.mobile-btn-toggle{
+  display: none;
+}
 
 // END HEADER
 
@@ -122,6 +176,32 @@ span {
 
 
 // HERO
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: $fs-500;
+    background-color: #4b536c;
+    height: 50vh;
+    
+    h1,
+    p {
+      font-size: $fs-700;
+    }
+    
+    h1 {
+      padding: 1rem;
+      font-weight: $fw-bold;
+    }
+    
+    p {
+      font-weight: $fw-light;
+    }
+    
+  }
+  
 
 // Resume CTA
 
