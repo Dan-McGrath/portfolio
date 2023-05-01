@@ -409,8 +409,57 @@ nav {
 
 
 // CONTACT
+.contact {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
 
+    .title {
+        padding: 2rem;
+    }
+}
 // Form
+.form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding: 0.6rem 0;
+        font-size: $fs-300;
+        color: $color-text;
+        text-align: left;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 0.8rem 0;
+        font-size: $fs-200;
+        color: $color-text;
+        margin-bottom: 2rem;
+        border: none;
+        border-bottom: 1px solid $color-text;
+        outline: none;
+        background: transparent; 
+    }
+
+    input[type="submit"] {
+        width: 75%;
+        border: 1px solid;
+        border-radius: 9999px;
+        margin: 1rem auto;
+        padding: 1rem;
+        transition: all 0.2s ease-in;
+        box-shadow: 0 0 20px 5px $color-light-accent;
+
+        &:hover {
+            background-color: $color-light-accent;
+            color: $color-dark-grey;
+            box-shadow: 0 0 20px 5px $color-text;
+
+        }
+    }
+}
 
 // END CONTACT
 
