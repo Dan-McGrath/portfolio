@@ -96,6 +96,7 @@ header {
   padding: 1rem 5%;
   position: fixed;
   width: 100%;
+  z-index: 99999;
 }
 header .logo {
   cursor: pointer;
