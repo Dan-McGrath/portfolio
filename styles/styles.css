@@ -189,8 +189,7 @@ nav {
 }
 
 .cta {
-  margin: 1rem;
-  padding: 1rem;
+  margin-top: 8rem;
 }
 .cta a {
   background-color: hsl(120, 90%, 80%);
@@ -261,21 +260,34 @@ nav {
 .projects {
   display: flex;
   flex-direction: column;
+  background: rgb(33, 18, 43);
+  background: linear-gradient(0deg, rgb(33, 18, 43) 13%, rgb(253, 29, 176) 62%, rgb(252, 176, 69) 100%);
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
+  border-radius: 8px;
 }
 .projects h1 {
-  padding: 3rem;
+  margin: 5rem 1rem 2rem 1rem;
+  border-radius: 5px;
+  padding: 1rem 0;
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(120, 90%, 80%);
+  box-shadow: 0 0 20px 5px hsl(0, 0%, 45%);
 }
 
 .cards {
   display: grid;
   width: 100%;
   height: auto;
+  z-index: 10;
 }
 
 .card {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   border-radius: 10px;
   box-shadow: 0 0 20px 5px hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 25%);
 }
 .card h2 {
   margin: 1rem;

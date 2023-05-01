@@ -274,8 +274,7 @@ nav {
 
 // Resume CTA
 .cta {
-    margin: 1rem;
-    padding: 1rem;
+    margin-top: 8rem;
 
     a {
         background-color: $color-light-accent;
@@ -377,9 +376,20 @@ nav {
 .projects {
     display: flex;
     flex-direction: column;
-
+    background: rgb(33,18,43);
+    background: linear-gradient(0deg, rgba(33,18,43,1) 13%, rgba(253,29,176,1) 62%, rgba(252,176,69,1) 100%);
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+    border-radius: 8px;
+    
     h1 {
-        padding: 3rem;
+        margin: 5rem 1rem 2rem 1rem;
+        border-radius: 5px;
+        padding: 1rem 0;
+        background-color: $color-dark-grey;
+        color: $color-light-accent;
+        box-shadow: 0 0 20px 5px $color-grey;
     }
 }
 
@@ -389,12 +399,16 @@ nav {
     display: grid;
     width: 100%;
     height: auto;
+    z-index: 10;
+    
+    
 }
 
 .card {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     border-radius: 10px;
     box-shadow: 0 0 20px 5px $color-dark-grey;
+    background-color: $color-bg;
     h2 {
         margin: 1rem;
         font-size: $fs-500;
