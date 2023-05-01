@@ -76,9 +76,9 @@ section {
 }
 
 .icon {
-  width: 30px;
-  height: 55px;
-  margin: 0 1rem;
+  border-radius: 50%;
+  padding: 1em;
+  margin: 1rem;
 }
 .icon i {
   width: 100%;
@@ -150,6 +150,10 @@ nav {
 
 .hamburger {
   list-style: none;
+}
+.hamburger .icon {
+  margin: -1em;
+  padding: 1em 1em;
 }
 .hamburger p {
   display: none;
@@ -282,7 +286,14 @@ nav {
 }
 .card img {
   width: 100%;
-  border-radius: 10px;
+  padding: 1rem;
+  border-radius: 36px;
+}
+.card a {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  padding: 1em;
 }
 
 .contact {

@@ -120,9 +120,10 @@ section {
 }
 
 .icon {
-    width: 30px;
-    height: 55px;
-    margin: 0 1rem;
+
+    border-radius: 50%;
+    padding: 1em;
+    margin: 1rem;
         
     
     
@@ -216,6 +217,11 @@ nav {
 .hamburger {
     list-style: none;
     
+    .icon {
+        margin: -1em; //larger touch area for hamburger
+        padding: 1em 1em;
+    }
+
     p {
         display: none;
     }
@@ -400,8 +406,16 @@ nav {
 
     img {
         width: 100%;
-        border-radius: 10px;
-    }   
+        padding: 1rem;
+        border-radius: 36px;
+    }
+    
+    a {
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        padding: 1em;
+    }
 }
 
 // END PROJECTS
