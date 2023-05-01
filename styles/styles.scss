@@ -117,7 +117,6 @@ span {
 
 section {
     margin: 3rem 0;
-    height: 100vh;
 }
 
 .icon {
@@ -241,6 +240,7 @@ nav {
     font-size: $fs-500;
     background-color: #4b536c;
     margin: 0;
+    height: 100vh;
 
     .hero__text {
         font-size: $fs-700;
@@ -310,7 +310,7 @@ nav {
 // ABOUT ME
 
 .about {
-
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -370,34 +370,37 @@ nav {
 .projects {
     display: flex;
     flex-direction: column;
+
+    h1 {
+        padding: 3rem;
+    }
 }
 
 // Cards
 
 .cards{
-    margin-top: 3rem;
     display: grid;
     width: 100%;
+    height: auto;
 }
 
 .card {
-        border-radius: 10px;
-        box-shadow: 0 0 20px 5px $color-dark-grey;
-        margin: 1rem 0;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px $color-dark-grey;
     h2 {
         margin: 1rem;
         font-size: $fs-500;
     }
 
-
-    img {
-        width: 100%;
-        border-radius: 15%;
-    }
-    
     p{
         font-size: $fs-300;
         padding: 1rem;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
     }   
 }
 

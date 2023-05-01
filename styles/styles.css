@@ -73,7 +73,6 @@ span {
 
 section {
   margin: 3rem 0;
-  height: 100vh;
 }
 
 .icon {
@@ -167,6 +166,7 @@ nav {
   font-size: 2rem;
   background-color: #4b536c;
   margin: 0;
+  height: 100vh;
 }
 .hero .hero__text {
   font-size: 3rem;
@@ -215,6 +215,7 @@ nav {
 }
 
 .about {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -256,27 +257,30 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.projects h1 {
+  padding: 3rem;
+}
 
 .cards {
-  margin-top: 3rem;
   display: grid;
   width: 100%;
+  height: auto;
 }
 
 .card {
+  margin: 0.5rem 0;
   border-radius: 10px;
   box-shadow: 0 0 20px 5px hsl(0, 0%, 15%);
-  margin: 1rem 0;
 }
 .card h2 {
   margin: 1rem;
   font-size: 2rem;
 }
-.card img {
-  width: 100%;
-  border-radius: 15%;
-}
 .card p {
   font-size: 1.3rem;
   padding: 1rem;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }/*# sourceMappingURL=styles.css.map */
