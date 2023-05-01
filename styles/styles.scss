@@ -243,7 +243,7 @@ nav {
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: $fs-500;
     background-color: #4b536c;
     margin: 0;
@@ -320,6 +320,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .about__text {
@@ -339,7 +340,7 @@ nav {
 .techstack-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    max-width: 520px;
 
     h2 {
         font-size: $fs-200;
@@ -351,7 +352,6 @@ nav {
         padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 100%;
 
         .grid__items {
   
@@ -382,6 +382,7 @@ nav {
     height: auto;
     padding-bottom: 3rem;
     border-radius: 8px;
+    align-items: center;
     
     h1 {
         margin: 5rem 1rem 2rem 1rem;
@@ -400,7 +401,7 @@ nav {
     width: 100%;
     height: auto;
     z-index: 10;
-    
+    max-width: 500px;
     
 }
 
