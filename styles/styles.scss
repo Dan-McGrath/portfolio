@@ -95,8 +95,7 @@ body{
     font-family: $sans-serif;
     font-size: $fs-400;
     color: $color-text;
-    text-align: center
-    
+    text-align: center;
 }
 
 a {
@@ -549,7 +548,7 @@ nav {
         background-color: $color-dark-grey;
         color: $color-light-accent;
         box-shadow: 0 0 20px 5px $color-grey;
-        width: 100vw;
+        width: 100%;
         text-align: center;
     }
 }
@@ -613,7 +612,7 @@ nav {
             color: $color-light-accent;
             padding: 0.5rem;
             text-align: left;
-            overflow: scroll;
+            overflow: auto;
         }
     }
 }

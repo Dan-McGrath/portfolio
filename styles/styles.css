@@ -391,7 +391,7 @@ nav {
   background-color: hsl(0, 0%, 15%);
   color: hsl(120, 90%, 80%);
   box-shadow: 0 0 20px 5px hsl(0, 0%, 45%);
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 
@@ -447,7 +447,7 @@ nav {
   color: hsl(120, 90%, 80%);
   padding: 0.5rem;
   text-align: left;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .project:hover .hover-text {
