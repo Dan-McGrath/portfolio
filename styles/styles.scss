@@ -138,6 +138,20 @@ section {
     }
 }
 
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0); /* Removed from CSS specification */
+	/* clip-path is the replacement for clip, but very few browsers support it. */
+	clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
 // END BASE
 
 
@@ -152,7 +166,7 @@ header {
     align-items: center;
     padding: 1rem 5%;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 99999;
     
     .logo {
@@ -221,10 +235,6 @@ nav {
     .icon {
         margin: -1em; //larger touch area for hamburger
         padding: 1em 1em;
-    }
-
-    p {
-        display: none;
     }
 
     i {
@@ -385,12 +395,13 @@ nav {
     align-items: center;
     
     h1 {
-        margin: 5rem 1rem 2rem 1rem;
         border-radius: 5px;
-        padding: 1rem 0;
+        padding: 3rem 0;
         background-color: $color-dark-grey;
         color: $color-light-accent;
         box-shadow: 0 0 20px 5px $color-grey;
+        width: 100vw;
+        text-align: center;
     }
 }
 
