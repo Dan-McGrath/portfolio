@@ -164,16 +164,42 @@ nav {
   display: none;
 }
 
-.hamburger {
+.menu-toggle-icon {
   list-style: none;
 }
-.hamburger .icon {
+.menu-toggle-icon .icon {
   margin: -1em;
   padding: 1em 1em;
 }
-.hamburger i {
+.menu-toggle-icon i {
   color: hsl(0, 0%, 85%);
   font-size: 2rem;
+}
+
+.menu-toggle[data-active=true] .close-icon {
+  display: none;
+}
+
+.menu-toggle[data-active=false] {
+  display: flex;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  width: 100vw;
+}
+.menu-toggle[data-active=false] .close-icon {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+.menu-toggle[data-active=false] .nav__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: hsl(120, 90%, 80%);
+}
+.menu-toggle[data-active=false] .hamburger-icon {
+  display: none;
 }
 
 .hero {

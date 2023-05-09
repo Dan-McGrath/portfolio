@@ -189,6 +189,7 @@ nav {
 
 .nav__links {
     display: none;
+    
     li {
       display: inline-block;
       padding: 1rem 1rem;
@@ -229,7 +230,7 @@ nav {
     display: none;
 }
 
-.hamburger {
+.menu-toggle-icon {
     list-style: none;
     
     .icon {
@@ -243,6 +244,39 @@ nav {
     }
 }
 
+.menu-toggle[data-active = 'true'] {
+    .close-icon {
+        display: none;
+    }
+}
+
+.menu-toggle[data-active = 'false'] {
+    display: flex;
+    height: 100vh;
+    background-color: rgba(0 0 0 / 0.9);
+    margin: 0;
+    width: 100vw;
+    
+    .close-icon {
+        position: absolute;
+        right: 20px;
+        top: 50px;
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: $color-light-accent;
+
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+
+}
 // END HEADER
 
 
