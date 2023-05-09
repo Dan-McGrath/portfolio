@@ -183,7 +183,6 @@ header {
 // Main Navigation
 
 nav {
-    height: 5vh;
     display: flex;
 }
 
@@ -226,9 +225,7 @@ nav {
 
 // Mobile Nav
 
-.mobile-nav {
-    display: none;
-}
+
 
 .menu-toggle-icon {
     list-style: none;
@@ -251,12 +248,19 @@ nav {
 }
 
 .menu-toggle[data-active = 'false'] {
-    display: flex;
-    height: 100vh;
-    background-color: rgba(0 0 0 / 0.9);
-    margin: 0;
     width: 100vw;
     
+    header {
+        background-color: rgba(0 0 0 / 0.95);
+        height: 100vh;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .logo {
+        display: none;
+    }
+
     .close-icon {
         position: absolute;
         right: 20px;
@@ -266,8 +270,9 @@ nav {
     .nav__links {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         color: $color-light-accent;
+        padding: 4rem;
 
     }
 
@@ -276,6 +281,18 @@ nav {
     }
 
 
+}
+
+@media screen and (min-width: 1000px) {
+    .nav__links{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
 }
 // END HEADER
 
@@ -385,33 +402,59 @@ nav {
 .techstack-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 520px;
+    max-width: 550px;
+    justify-content: center;
 
     h2 {
         font-size: $fs-200;
         font-weight: $fw-semibold;
     }
+
+
+
 }
 
 .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0.6rem;
-        padding-top: 1rem;
+       
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.6rem;
+    padding-top: 1rem;
 
-        .grid__items {
-  
+    .grid__items {
+        max-width: 75px;
+        p {
+            font-size: $fs-100;
+            font-weight: $fw-semibold;
+            padding: 0;
+            padding-top: 0.5rem;
             
-
-
-            p {
-                font-size: $fs-100;
-                font-weight: $fw-semibold;
-                padding-top: 0.5rem;
-            }
         }
+    }
+
+}
+
+@media screen and (min-width: 360px) {
+    
+    .knowledge-level:first-child {
+        border-right: 1px solid $color-light-accent;
 
     }
+    
+    .knowledge-level:last-child {
+        border-left: 1px solid $color-light-accent;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        
+
+        .grid__items {
+           column-gap: 0; 
+        }
+    }
+}
 // END ABOUT ME
 
 
@@ -495,10 +538,11 @@ nav {
         transition: all 0.4s ease-in-out;
 
         p {
-            font-size: $fs-300;
+            font-size: $fs-200;
             color: $color-light-accent;
             padding: 0.5rem;
             text-align: left;
+            overflow: scroll;
         }
     }
 }

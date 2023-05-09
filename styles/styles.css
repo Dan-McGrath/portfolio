@@ -124,7 +124,6 @@ header .logo img {
 }
 
 nav {
-  height: 5vh;
   display: flex;
 }
 
@@ -160,10 +159,6 @@ nav {
   width: 100%;
 }
 
-.mobile-nav {
-  display: none;
-}
-
 .menu-toggle-icon {
   list-style: none;
 }
@@ -181,11 +176,16 @@ nav {
 }
 
 .menu-toggle[data-active=false] {
-  display: flex;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  margin: 0;
   width: 100vw;
+}
+.menu-toggle[data-active=false] header {
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 100vh;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.menu-toggle[data-active=false] .logo {
+  display: none;
 }
 .menu-toggle[data-active=false] .close-icon {
   position: absolute;
@@ -195,13 +195,23 @@ nav {
 .menu-toggle[data-active=false] .nav__links {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: hsl(120, 90%, 80%);
+  padding: 4rem;
 }
 .menu-toggle[data-active=false] .hamburger-icon {
   display: none;
 }
 
+@media screen and (min-width: 1000px) {
+  .nav__links {
+    display: flex;
+    justify-content: center;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -275,7 +285,8 @@ nav {
 .techstack-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 520px;
+  max-width: 550px;
+  justify-content: center;
 }
 .techstack-container h2 {
   font-size: 1.1rem;
@@ -285,15 +296,35 @@ nav {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.6rem;
+  row-gap: 0.6rem;
   padding-top: 1rem;
+}
+.grid .grid__items {
+  max-width: 75px;
 }
 .grid .grid__items p {
   font-size: 0.55rem;
   font-weight: 500;
+  padding: 0;
   padding-top: 0.5rem;
 }
 
+@media screen and (min-width: 360px) {
+  .knowledge-level:first-child {
+    border-right: 1px solid hsl(120, 90%, 80%);
+  }
+  .knowledge-level:last-child {
+    border-left: 1px solid hsl(120, 90%, 80%);
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .grid .grid__items {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -362,10 +393,11 @@ nav {
   transition: all 0.4s ease-in-out;
 }
 .project .hover-text p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: hsl(120, 90%, 80%);
   padding: 0.5rem;
   text-align: left;
+  overflow: scroll;
 }
 
 .project:hover .hover-text {
