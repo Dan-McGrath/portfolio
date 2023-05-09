@@ -9,42 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
   <header>
     <a class='logo' href="#contact"><img src='./images/logo.png' alt='logo'/></a>
     <nav>
       <!--   Main Navigation   -->
-      
-      <ul class='nav__links'>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-toggle">
-        <div class="hamburger">
-          <li><a class="icon"><p class="sr-only">Menu</p><i class="fa-solid fa-bars"></i></a></li>
+      <div class="menu-toggle" data-active="true" id="menu-toggle">
+        <div class="menu-toggle-icon">
+          <li><a class="hamburger-icon"><p class="sr-only">Menu</p><i class="fa-solid fa-bars"></i></a></li>
+          <li><a class="close-icon"><p class="sr-only">Close</p><i class="fa-solid fa-x"></i></a></li>
         </div>
-      </div>
-      
-
+        <ul class='nav__links'>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>  
      </nav>
       <!--    End Main Navigation    -->
-      
-      <!--   Mobile Nav     -->
-     <div class='mobile-nav'>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>  
-      <!--   End Mobile Nav     -->
   </header>
   <main>
     <!--   Hero Section   -->
-    <section class='section hero' id='hero'>
+    <section class='section hero' id='home'>
       <div class="hero__text"> 
         <h1 class='name'>Dan McGrath</h1>
         <p><span>#</span>Full-Stack Developer</p>
@@ -245,6 +234,6 @@
   <script src="https://kit.fontawesome.com/598e1292ce.js" crossorigin="anonymous"></script>
 
     <!-- Main JS File -->
-  <script src="app.js"></script>
+  
   <!-- End Srcipts -->
 <body>
