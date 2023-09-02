@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Nav from '../nav/Nav';
+import PropTypes from 'prop-types';
 
 const Header = ({ isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,10 @@ const Header = ({ isMobile }) => {
       <Nav />
     </header>
   );
+};
+
+Header.propTypes = {
+  isMobile: PropTypes.bool,
 };
 
 export default Header;
