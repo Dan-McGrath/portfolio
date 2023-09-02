@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from './header/Header.jsx';
+import Hero from './hero/Hero.jsx';
+import About from './about/About.jsx';
 
 function App() {
   const [windowDimension, setWindowDimension] = useState(null);
@@ -22,6 +24,10 @@ function App() {
   return (
     <>
       <Header isMobile={isMobile} />
+      <main>
+        <Hero />
+        <About />
+      </main>
     </>
   );
 }
