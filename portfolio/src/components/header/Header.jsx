@@ -9,6 +9,10 @@ const Header = ({ isMobile }) => {
     setIsOpen(!isOpen);
   };
 
+  const clickLinkHandler = () => {
+    setIsOpen(!isOpen);
+  };
+
   return isMobile ? (
     isOpen ? (
       <header>
@@ -17,7 +21,7 @@ const Header = ({ isMobile }) => {
             <p className="sr-only">Close</p>
             <i className="fa-solid fa-x"></i>
           </a>
-          <Nav />
+          <Nav clickLinkHandler={clickLinkHandler} />
         </div>
       </header>
     ) : (
