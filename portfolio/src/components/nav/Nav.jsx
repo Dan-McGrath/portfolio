@@ -1,4 +1,4 @@
-const Nav = ({ isMobile }) => {
+const Nav = () => {
   //const mobileStyles
 
   return (
