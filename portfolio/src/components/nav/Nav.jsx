@@ -21,7 +21,7 @@ const Nav = ({ clickLinkHandler }) => {
   );
 };
 
-Nav.PropTypes = {
+Nav.propTypes = {
   clickLinkHandler: PropTypes.func,
 };
 
