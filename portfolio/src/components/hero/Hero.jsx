@@ -8,7 +8,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="cta">
-        <a href="portfolio\src\assets\images\resume.pdf" target="_blank">
+        <a href="../src/assets/images/resume.pdf" target="_blank">
           Resume
         </a>
       </div>
