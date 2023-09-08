@@ -3,7 +3,7 @@ const ContactForm = () => {
     <>
       <section className="section contact" id="contact">
         <h2 className="title">Contact Me</h2>
-        <form action="" method="post" netlify className="form">
+        <form action="" method="post" netlify="true" className="form">
           <label htmlFor="name">
             Name:
             <input
