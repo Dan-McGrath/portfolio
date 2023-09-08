@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Project from '../project/Project';
@@ -9,6 +9,7 @@ const Projects = () => {
     autoPlay: true,
     stopOnHover: true,
     swipeable: true,
+    showThumbs: false,
   };
   const repoArray = [
     {
@@ -49,8 +50,8 @@ const Projects = () => {
   ));
 
   return (
-    <section className="projects">
-      <h2>Projects</h2>
+    <section className="section projects" id="projects">
+      <h2 className="title">Projects</h2>
       <div className="wrapper">
         <Carousel {...settings}>{arrayItems}</Carousel>
       </div>
