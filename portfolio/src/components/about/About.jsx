@@ -2,11 +2,11 @@ const About = () => {
   return (
     <section className="section about" id="about">
       <div className="about__text">
-        <h1 className="title">About Me</h1>
+        <h2 className="title">About Me</h2>
         <p>
-          Hello, I'm <span>Dan McGrath</span>! I'm a self-taught, Full-Stack
-          Devoloper. My focus is on creating responsive web designs, using the
-          MERN tech stack!
+          Hello, I&apos;m <span>Dan McGrath</span>! I&apos;m a self-taught,
+          Full-Stack Devoloper. My focus is on creating responsive web designs,
+          using the MERN tech stack!
         </p>
       </div>
 
