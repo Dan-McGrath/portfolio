@@ -114,9 +114,6 @@ span {
     font-size: $fs-600;
 }
 
-section {
-    margin: 3rem 0;
-}
 
 .icon {
 
@@ -163,9 +160,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    position: fixed;
-    width: 100vw;
+    padding: 1rem 1rem;
+    position: sticky;
+    top: 0;
     z-index: 99999;
     
     .logo {
@@ -189,7 +186,7 @@ nav {
     li {
       display: inline-block;
       padding: 1rem 1rem;
-      font-size: $fs-500;
+      font-size: $fs-400;
       font-weight: $fw-normal;
       
     }
@@ -234,9 +231,6 @@ nav {
         color: $color-text;
         font-size: $fs-500;
     }
-    .logo {
-        display: none;
-    }
 
     .close-icon {
         position: absolute;
@@ -249,24 +243,13 @@ nav {
         flex-direction: column;
         justify-content: space-between;
         color: $color-light-accent;
-        padding: 4rem;
+        padding: 2rem;
 
     }
 
 }
 
 
-// @media screen and (min-width: 1000px) {
-//     .nav__links{
-//         display: flex;
-//         justify-content: center;
-
-//     }
-
-//     .hamburger-icon {
-//         display: none;
-//     }
-// }
 // END HEADER
 
 
@@ -282,10 +265,10 @@ nav {
     background-color: #4b536c;
     margin: 0;
     height: 100vh;
-
+    padding-top: 4em;
     .hero__text {
         font-size: $fs-700;
-        h1 {
+        h2 {
         font-weight: $fw-bold;
         }
     
@@ -299,10 +282,6 @@ nav {
             }
         }
     }   
-
-    
-
-    
   }
   
 
@@ -378,17 +357,18 @@ nav {
 // ABOUT ME
 
 .about {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
-}
+    margin: 2em 0;
+    height: 100vh;
+    padding-top: 4em;
+}   
 
 .about__text {
         
-    h1 {
+    h2 {
         padding-bottom: 3rem;
     }
 
@@ -401,7 +381,7 @@ nav {
 @media screen and (min-width: 700px) {
     .about__text {
 
-        h1 {
+        h2 {
             font-size: $fs-800;
         }
         p {
@@ -505,77 +485,65 @@ nav {
 
 // PROJECTS
 
-.projects {
+.wrapper {
+    margin: 0 auto;
+}
+
+
+.carousel {
     display: flex;
-    flex-direction: column;
+
+    .project {
+        display: block;
+
+    }
+}
+
+.carousel-root {
+    outline: none;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.projects {
+
     background: rgb(33,18,43);
-    background: linear-gradient(0deg, rgba(33,18,43,1) 13%, rgba(253,29,176,1) 62%, rgba(252,176,69,1) 100%);
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 3rem;
+    background: linear-gradient(0deg, $color-bg 2%, rgba(133, 5, 88, 0.541) 30%, $color-bg 100%);
+    padding: 4em 0;
     border-radius: 8px;
-    align-items: center;
-    
-    h1 {
+    height: 100vh;
+
+
+
+    h2 {
         border-radius: 5px;
         padding: 3rem 0;
-        background-color: $color-dark-grey;
         color: $color-light-accent;
-        box-shadow: 0 0 20px 5px $color-grey;
-        width: 100%;
         text-align: center;
     }
 }
 
-// Cards
-
-.cards{
-    display: grid;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-    max-width: 500px;
-    padding-top: 5rem;
-    
-}
-
-.card {
-    margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 5px $color-dark-grey;
-    background-color: $color-bg;
-    position: relative;
-
-    h2 {
-        margin: 1rem;
-        font-size: $fs-500;
-    }
-
-    a {
-        display: inline-block;
-        position: relative;
-        border-radius: 50%;
-        padding: 1em;
-    }
-
-}
-
 .project {
     position: relative;
-    
+    margin-top: 1em;
+
+    h3 {
+        color: $color-text;
+        font-weight: $fw-semibold;
+    }
+
     img {
-        width: 100%;
+        width: 50%;
         padding: 1rem;
         border-radius: 36px;
+        max-height: 500px;
     }
 
     .hover-text{
         width: 100%;
-        height: 100%;
         background-color: $color-grey;
         position: absolute;
         top: 0;
-        left: 0;
         border-radius: 15px;
         opacity: 0;
         transform: scale(0);
@@ -596,30 +564,18 @@ nav {
 }
 
 @media screen and (min-width: 1300px) {
-    .cards {
-        max-width: 1200px;
-        width: 80%;
-        margin: auto;
-        grid-template-columns: 1fr 1fr;
-        gap: 10rem;
+
+    .wrapper {
+        width: 50%;
+        height: 50%;
+
     }
-
-    .card {
-
-        h2 {
-            margin: 2rem;
-            font-size: $fs-700;
-        }
-    
-        a {
-            font-size: $fs-700;
-            padding: 0.5em;
-        }
-    
+    .carousel-root {
+        width: 75%;
     }
 
     .projects {   
-        h1 {
+        h2 {
             font-size: $fs-800;
         }
     }
@@ -643,9 +599,10 @@ nav {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
     .title {
-        padding: 2rem;
+        padding-top: 4em;
     }
 }
 // Form
