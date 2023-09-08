@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Nav from '../nav/Nav';
 import PropTypes from 'prop-types';
+import imgUrl from '../../assets/images/logo.png';
 
 const Header = ({ isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Header = ({ isMobile }) => {
     ) : (
       <header>
         <a href="#contact" className="logo">
-          <img src="../src/assets/images/logo.png" alt="logo"></img>
+          <img src={imgUrl} alt="logo"></img>
         </a>
         <div className="hamburger-menu" onClick={onClickHandler}>
           <a className="hamburger-icon">
@@ -40,7 +41,7 @@ const Header = ({ isMobile }) => {
   ) : (
     <header>
       <a href="#contact" className="logo">
-        <img src="../src/assets/images/logo.png" alt="logo"></img>
+        <img src={imgUrl} alt="logo"></img>
       </a>
       <Nav />
     </header>

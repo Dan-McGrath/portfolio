@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import imgURL from '../../assets/images/projectTemplate.jpg';
 
 const Project = ({ name, source, demo }) => {
   return (
     <div className="project">
       <h3>{name}</h3>
-      <img src="../src/assets/images/projectTemplate.jpg" />
+      <img src={imgURL} />
       <div className="hover-text">
         <p>Description</p>
       </div>

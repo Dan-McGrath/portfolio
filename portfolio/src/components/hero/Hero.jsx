@@ -1,3 +1,5 @@
+import resume from '../../assets/images/resume.pdf';
+
 const Hero = () => {
   return (
     <section className="section hero" id="home">
@@ -8,7 +10,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="cta">
-        <a href="../src/assets/images/resume.pdf" target="_blank">
+        <a href={resume} target="_blank" rel="noreferrer">
           Resume
         </a>
       </div>
