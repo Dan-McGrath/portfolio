@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-
 const Project = ({ name, source, demo, img }) => {
   return (
     <div className="project">
@@ -36,6 +35,7 @@ Project.propTypes = {
   name: PropTypes.string,
   source: PropTypes.string,
   demo: PropTypes.string,
+  img: PropTypes.string,
 };
 
 export default Project;
