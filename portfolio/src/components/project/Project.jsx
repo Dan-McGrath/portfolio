@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-const Project = ({ name, source, demo }) => {
+const Project = ({ name, source, demo, img }) => {
   return (
     <div className="project">
       <h3>{name}</h3>
-      <img src="../src/assets/images/projectTemplate.jpg" />
+      <img src={img} alt={name} />
       <div className="hover-text">
         <p>Description</p>
       </div>
@@ -35,6 +35,7 @@ Project.propTypes = {
   name: PropTypes.string,
   source: PropTypes.string,
   demo: PropTypes.string,
+  img: PropTypes.string,
 };
 
 export default Project;
