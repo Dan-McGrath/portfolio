@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Project from '../project/Project';
 import imgURL from '../../assets/images/projectTemplate.jpg';
 import timeKiller from '../../assets/images/time-killer.png';
+import arcanGaming from '../../assets/images/arcan-gaming.png';
 
 const Projects = () => {
   const arrowStyles = {
@@ -43,10 +44,10 @@ const Projects = () => {
       img: timeKiller,
     },
     {
-      name: 'Rock-Paper-Scissors',
-      source: 'https://github.com/Dan-McGrath/Rock-Paper-Scissors',
-      demo: 'https://dan-mcgrath.github.io/Rock-Paper-Scissors/',
-      img: imgURL,
+      name: 'Arcan Gaming',
+      source: 'https://github.com/Dan-McGrath/Shopping-Cart',
+      demo: 'https://arcangaming.netlify.app/',
+      img: arcanGaming,
     },
     {
       name: 'Memory Game',
