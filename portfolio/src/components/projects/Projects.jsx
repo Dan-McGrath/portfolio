@@ -10,12 +10,16 @@ const Projects = () => {
       source: 'https://github.com/Dan-McGrath/Time-Killer',
       demo: 'https://time-killer.netlify.app/',
       img: timeKiller,
+      description:
+        'This is an app built fully in react. The purpose of this was to gain experience and test my knowledge using react. It has 4 differnet playable games to choose from.',
     },
     {
       name: 'Arcan Gaming',
       source: 'https://github.com/Dan-McGrath/Shopping-Cart',
       demo: 'https://arcangaming.netlify.app/',
       img: arcanGaming,
+      description:
+        'This is an app built fully in react. The purpose of this was to gain experience and test my knowledge with using a 3rd party API. I decided to build an e-commerce store to buy games.',
     },
     {
       name: 'Memory Game',
@@ -39,6 +43,7 @@ const Projects = () => {
       source={ele.source}
       demo={ele.demo}
       img={ele.img}
+      description={ele.description}
     />
   ));
 
