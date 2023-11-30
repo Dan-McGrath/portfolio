@@ -536,10 +536,11 @@ nav {
     }
 
     .hover-text{
-        width: 100%;
+        width: 61%;
         background-color: $color-grey;
         position: absolute;
         top: 0;
+        left: 20%;
         border-radius: 15px;
         opacity: 0;
         transform: scale(0);
@@ -560,6 +561,9 @@ nav {
 }
 
 @media screen and (min-width: 600px) {
+    .hover-text {
+        font-size: 1rem;
+    }
     .wrapper {
         grid-template-columns: 1fr 1fr;
     }
