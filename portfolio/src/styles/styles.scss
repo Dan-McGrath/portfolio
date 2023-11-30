@@ -264,13 +264,12 @@ nav {
     justify-content: flex-end;
     font-size: $fs-500;
     background-color: #4b536c;
-    margin: 0;
-    height: 100vh;
     padding-top: 4em;
     .hero__text {
         font-size: $fs-700;
-        h2 {
+        h1 {
         font-weight: $fw-bold;
+        padding: 1em, 0;
         }
     
         p {
@@ -284,6 +283,8 @@ nav {
         }
     }   
   }
+
+  
   
 
 // Resume CTA
@@ -350,6 +351,11 @@ nav {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .hero{
+        padding-top: 3em;
+    }
+}
 // END HERO
 
 
@@ -363,8 +369,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin: 2em 0;
-    height: 100vh;
-    padding-top: 4em;
+    padding-top: 5em;
 }   
 
 .about__text {
@@ -487,32 +492,18 @@ nav {
 // PROJECTS
 
 .wrapper {
+    display: grid;
     margin: 0 auto;
 }
 
-
-.carousel {
-    display: flex;
-
-    .project {
-        display: block;
-
-    }
-}
-
-.carousel-root {
-    outline: none;
-    width: 75%;
-    margin: 0 auto;
-}
 
 .projects {
 
     background: rgb(33,18,43);
     background: linear-gradient(0deg, $color-bg 2%, rgba(133, 5, 88, 0.541) 30%, $color-bg 100%);
-    padding: 4em 0;
+    padding-top: 4em;
     border-radius: 8px;
-    height: 100vh;
+    max-width: 100%;
 
 
 
@@ -528,16 +519,20 @@ nav {
     position: relative;
     margin-top: 1em;
 
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+
     h3 {
         color: $color-text;
         font-weight: $fw-semibold;
     }
 
     img {
-        width: 50%;
-        padding: 1rem;
-        border-radius: 36px;
-        max-height: 500px;
+        max-width: 60%;
+        margin-top: 1em;;
+        border-radius: 12px;
     }
 
     .hover-text{
@@ -564,16 +559,14 @@ nav {
     transform: scale(1);
 }
 
+@media screen and (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media screen and (min-width: 1300px) {
 
-    .wrapper {
-        width: 50%;
-        height: 50%;
-
-    }
-    .carousel-root {
-        width: 75%;
-    }
 
     .projects {   
         h2 {
@@ -582,6 +575,8 @@ nav {
     }
 
     .project {
+
+
         .hover-text{
             p {
                 font-size: $fs-500;
@@ -597,13 +592,12 @@ nav {
 
 // CONTACT
 .contact {
-    margin-top: 5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 
     .title {
-        padding-top: 4em;
+        padding-top: 3em;
     }
 }
 // Form
@@ -651,6 +645,12 @@ nav {
 }
 
 @media screen and (min-width: 1150px) {
+    .contact {
+        margin-top: 0.5em;
+        h2 {
+            font-size: $fs-800;
+        }
+    }
     .form {
         width: 80%;
         margin: auto;
@@ -664,15 +664,16 @@ nav {
         }
 
         input[type="submit"] {
-            margin-top: 3rem;
-            padding: 1.5rem; 
+            margin-top: 0.75rem;
+            padding: 1rem; 
+            width: 80%;
         }
 
         input,
         textarea {
             font-size: $fs-300;
             color: $color-light-accent;
-            margin-bottom: 2rem;
+            margin-bottom: 1.2rem;
 
         }
     }
